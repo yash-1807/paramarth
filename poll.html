@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polls/Samvad</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <STyle>
+    header {
+      background-color: #f5f5f5;
+      padding: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 27px;
+      font-weight: 508;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    header img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .profile-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #007bff;
+      margin-left: auto;
+    }
+
+    /* Search bar styles */
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      flex: 1;
+      margin: 0 20px 0 10px;
+      /* adjusted margin */
+    }
+
+    .search-bar input[type="text"] {
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      margin-right: 10px;
+    }
+
+    .search-bar button[type="submit"] {
+      padding: 12px 20px;
+      font-size: 19px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+
+    .search-bar button[type="submit"]:hover {
+      background-color: #0069d9;
+    }
+
+    /* Share icon styles */
+    .share-icon {
+      width: 40px;
+      height: 40px;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/44/44763.png');
+      background-size: cover;
+      margin-right: 20px;
+    }
+
+    .social-media-icons {
+      width: 1480px;
+      display: block;
+      position: absolute;
+      top: 1000px;
+      left: 0px;
+    }
+
+
+
+
+
+
+    .crypto_container{
+    width: 200px;
+    position: absolute;
+    right:50px;
+    top:450px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    align-items:center;
+
+ }
+
+
+ .btc{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left:70px;
+ }
+ .ethereum{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left:70px;
+    
+ }
+ .dogecoin{
+    width: 80px;
+    height: 50px;
+    position: relative;
+    left:55px;
+ }
+ .ripple{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 70px;
+ }
+ .btcc{
+    position: relative;
+    left: 50px;
+ }
+ .btccc{
+    position: relative;
+    left: 65px;
+ }
+ .ethereumc{
+    position: relative;
+    left: 55px;
+ }
+ .ethereumcc{
+    position: relative;
+    left: 55px;
+ }
+ .dogecoinc{
+    position: relative;
+    left:70px;
+ }
+ .dogecoincc{
+    position: relative;
+    left: 60px;
+ }
+ .ripplec{
+    position: relative;
+    left:65px;
+ }
+ .ripplecc{
+    position: relative;
+    left:70px;
+ }
+
+
+
+
+
+ .weather-box {
+        border: 1px solid black;
+        padding: 10px;
+        width: 300px;
+        height: 150px;
+        margin: 20px;
+        text-align: center;
+        background-color: #F0F8FF;
+        box-shadow: 3px 3px 3px grey;
+      }
+
+      h1 {
+        margin-top: 0;
+      }
+
+      .weather-icon {
+        display: inline-block;
+        font-size: 30px;
+        margin-right: 10px;
+        vertical-align: middle;
+
+
+        color: orange;
+
+      }
+
+
+      .weather {
+        width: 300px;
+        height: 200px;
+        background-color: #111212;
+        position: absolute;
+        top: 200px;
+        left: 1220px;
+        border-radius: 5px;
+        background-color: #b7aeae;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+
+      }
+
+      a:link{
+        text-decoration: none;
+      }
+
+
+
+
+  </STyle>
+</head>
+
+<body>
+
+  <header>
+    <img src="https://www.kindpng.com/picc/m/174-1743743_latest-news-clipart-tulsi-leaf-png-transparent-png.png"
+      alt="Website Logo">
+    <h1><a href="index.html"> HOME</a> | <a href="actualmap.html">MAPS</a> | POLLS |<a
+        href="https://timesofindia.indiatimes.com/?from=mdr"> INDIA</a> | <a href="https://www.reuters.com/world/">
+        WORLD</a> |<a href="https://tamil.news18.com/tamil-nadu/">LOCAL</a> | <a
+        href="https://timesofindia.indiatimes.com/sports">SPORTS</a> |<a>Crowdfund</a>
+        </a></h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </div>
+    <div class="share-icon"></div>
+  </header>
+
+
+
+  <div class="wrapper">
+    <header>Your Opinion??</header>
+    <div class="poll-area">
+      <input type="checkbox" name="poll" id="opt-1">
+      <input type="checkbox" name="poll" id="opt-2">
+      <input type="checkbox" name="poll" id="opt-3">
+      <input type="checkbox" name="poll" id="opt-4">
+      <label for="opt-1" class="opt-1">
+        <div class="row">
+          <div class="column">
+            <span class="circle"></span>
+            <span class="text">YES</span>
+          </div>
+          <span class="percent">30%</span>
+        </div>
+        <div class="progress" style='--w:30;'></div>
+      </label>
+      <label for="opt-2" class="opt-2">
+        <div class="row">
+          <div class="column">
+            <span class="circle"></span>
+            <span class="text">NO</span>
+          </div>
+          <span class="percent">20%</span>
+        </div>
+        <div class="progress" style='--w:20;'></div>
+      </label>
+      <label for="opt-3" class="opt-3">
+        <div class="row">
+          <div class="column">
+            <span class="circle"></span>
+            <span class="text">MAYBE</span>
+          </div>
+          <span class="percent">50%</span>
+        </div>
+        <div class="progress" style='--w:40;'></div>
+      </label>
+      
+    </div>
+  </div>
+
+
+<div class="question_1">
+  <h1> Do you think uniform civil code should be implemented??</h1>
+  <img src="ucc.png">
+ <p>
+  
+  Uniform Civil Code is a proposed law that aims to replace personal laws with a common set of civil laws for all citizens of India.<br>
+  The issue remains a topic of debate in India, with proponents calling for its implementation, while opponents argue that it would infringe on religious freedom and diversity.
+ </p>
+
+</div>
+
+
+
+
+
+
+
+
+  <div class="wrapper2">
+    <header>Your Opinion??</header>
+    <div class="poll-area">
+      <input type="checkbox" name="poll" id="opt-1">
+      <input type="checkbox" name="poll" id="opt-2">
+      <input type="checkbox" name="poll" id="opt-3">
+      <input type="checkbox" name="poll" id="opt-4">
+      <label for="opt-1" class="opt-1">
+        <div class="row">
+          <div class="column">
+            <span class="circle"></span>
+            <span class="text">YES</span>
+          </div>
+          <span class="percent">30%</span>
+        </div>
+        <div class="progress" style='--w:30;'></div>
+      </label>
+      <label for="opt-2" class="opt-2">
+        <div class="row">
+          <div class="column">
+            <span class="circle"></span>
+            <span class="text">No</span>
+          </div>
+          <span class="percent">20%</span>
+        </div>
+        <div class="progress" style='--w:20;'></div>
+      </label>
+      <label for="opt-3" class="opt-3">
+        <div class="row">
+          <div class="column">
+            <span class="circle"></span>
+            <span class="text">Maybe</span>
+          </div>
+          <span class="percent">40%</span>
+        </div>
+        <div class="progress" style='--w:40;'></div>
+      </label>
+      
+    </div>
+  </div>
+
+
+
+  <div class="question_2">
+    <h1>Is Implementation of CAA Constitutional?</h1>
+    <p>
+      The issue of implementation of CAA has been debated since the independence of the country.<br>
+      The act has been controversial and has faced widespread protests and legal challenges.<br>
+      Do you think there is a need for india to have CAA?
+    </p>
+    <img src="caa.webp">
+
+
+  </div>
+
+
+  <div class="question_3">
+    <h1>
+      do you agree on iNDIA's stand on Russia-ukraine conflict?
+    </h1>
+     <img src="russia.jpg">
+    <p>
+      India has maintained a neutral stance on the Russia-Ukraine conflict, urging both sides to resolve their differences through dialogue and diplomatic channels. India has emphasized the need for respecting the sovereignty and has called for a peaceful resolution of the conflict
+    </p>
+  </div>
+
+
+
+
+
+
+
+
+ <div class="wrapper3">
+    <header>Your Opinion??</header>
+    <div class="poll-area">
+      <input type="checkbox" name="poll" id="opt-1">
+      <input type="checkbox" name="poll" id="opt-2">
+      <input type="checkbox" name="poll" id="opt-3">
+      <input type="checkbox" name="poll" id="opt-4">
+      <label for="opt-1" class="opt-1">
+        <div class="row">
+          <div class="column">
+            <span class="circle"></span>
+            <span class="text">YES</span>
+          </div>
+          <span class="percent">30%</span>
+        </div>
+        <div class="progress" style='--w:30;'></div>
+      </label>
+      <label for="opt-2" class="opt-2">
+        <div class="row">
+          <div class="column">
+            <span class="circle"></span>
+            <span class="text">No</span>
+          </div>
+          <span class="percent">20%</span>
+        </div>
+        <div class="progress" style='--w:20;'></div>
+      </label>
+      <label for="opt-3" class="opt-3">
+        <div class="row">
+          <div class="column">
+            <span class="circle"></span>
+            <span class="text">Maybe</span>
+          </div>
+          <span class="percent">40%</span>
+        </div>
+        <div class="progress" style='--w:40;'></div>
+      </label>
+      
+    </div>
+  </div>
+
+
+  
+
+
+
+
+  
+
+
+
+   
+
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
